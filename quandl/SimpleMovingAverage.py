@@ -1,10 +1,10 @@
 # Import libraries and modules
 import quandl
-import pandas as pd
 import matplotlib.pyplot as plt
+import my_secrets as s
 
 # Define Quandl API key and security symbol
-quandl.ApiConfig.api_key = 'sTP3dxF1y6qw_uvAk_wy'
+quandl.ApiConfig.api_key = s.QUANDL_API_KEY
 symbol = 'WIKI/AAPL' # Apple stock
 
 # Get historical price data from Quandl
